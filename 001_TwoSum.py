@@ -9,19 +9,26 @@
 #   2. You may not use the same element twice
 
 # Sample Input
-numArray = [2, 1, 5, 3]
-target = 4
+numbers = [2, 1, 5, 3]
+target_sum = 4
 
-# HASH MAP - O(n)
-prevMap = {}    # val : index
-solution = []
 
-for i, n in enumerate(numArray):
-    diff = target - n
-    if diff in prevMap:
-        solution.append(prevMap[diff])
-        solution.append(i)
-        break
-    prevMap[n] = i
+def two_sum(nums, target):
+    prev_map = {}    # val : index
+    solution = []
 
-print(solution)
+    for i, n in enumerate(nums):
+        diff = target - n
+
+        if diff in prev_map:
+            solution.append(prev_map[diff])
+            solution.append(i)
+            break
+
+        prev_map[n] = i
+
+    return solution
+
+
+result = two_sum(numbers, target_sum)
+print("Indices of the two numbers that add up to the target are:", result)
