@@ -52,3 +52,7 @@ def search_rotated_sorted_array(nums, target):
                 left = mid + 1
 
     return target_index
+
+
+result = search_rotated_sorted_array(numbers, target_value)
+print("Index of target value:", result)
