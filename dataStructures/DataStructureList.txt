@@ -1,0 +1,33 @@
+Arrays
+-----------------------------------------------------
+Static Arrays
+Dynamic Arrays
+Longest Common Prefix (LCP) Array
+Suffix Arrays
+
+Linked Lists
+-----------------------------------------------------
+Linked List
+Doubly Linked List
+
+Stacks
+-----------------------------------------------------
+Stack
+
+Queues
+-----------------------------------------------------
+Queue
+Priority Queue
+Indexed Priority Queue
+
+Trees
+-----------------------------------------------------
+Binary Tree
+Balanced Binary Tree
+AVL Tree
+Fenwick Tree
+Suffix Tree
+
+Hash Tables
+-----------------------------------------------------
+Hash Table

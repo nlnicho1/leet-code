@@ -14,20 +14,15 @@ target_sum = 4
 
 
 def two_sum(nums, target):
-    prev_map = {}    # val : index
-    solution = []
+    prev_numbers_map = {}
 
     for i, n in enumerate(nums):
-        diff = target - n
+        difference = target - n
+        if difference in prev_numbers_map:
+            return [prev_numbers_map[difference], i]
+        prev_numbers_map[n] = i
 
-        if diff in prev_map:
-            solution.append(prev_map[diff])
-            solution.append(i)
-            break
-
-        prev_map[n] = i
-
-    return solution
+    return
 
 
 result = two_sum(numbers, target_sum)
